@@ -8,10 +8,10 @@ import { Suspense } from "react";
 
 
 const Scene = () => {
-  //const materials = useLoader(MTLLoader, "model/Bayraktar.mtl");
-  //const obj = useLoader(OBJLoader, "model/Bayraktar.obj", (loader) => {
-  const materials = useLoader(MTLLoader, "https://docs.rferl.org/Infographics/labs/Jakub/Test3D/model/Bayraktar.mtl");
-  const obj = useLoader(OBJLoader, "https://docs.rferl.org/Infographics/labs/Jakub/Test3D/model/Bayraktar.obj", (loader) => {
+  const materials = useLoader(MTLLoader, "model/Bayraktar.mtl");
+  const obj = useLoader(OBJLoader, "model/Bayraktar.obj", (loader) => {
+  //const materials = useLoader(MTLLoader, "https://docs.rferl.org/Infographics/labs/Jakub/Test3D/model/Bayraktar.mtl");
+  //const obj = useLoader(OBJLoader, "https://docs.rferl.org/Infographics/labs/Jakub/Test3D/model/Bayraktar.obj", (loader) => {
     materials.preload();
     loader.setMaterials(materials);
   });
